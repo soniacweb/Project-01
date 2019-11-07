@@ -1,0 +1,342 @@
+* {
+  box-sizing: border-box;
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  
+}
+
+#logo {
+  justify-content: center;
+  /* position: center; */
+  margin: 20px 10px;
+
+
+}
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Permanent Marker', cursive;
+  justify-content: center;
+  margin: 0;
+  background-size: cover;
+}
+
+/* main{
+  height: 800px;
+} */
+
+header {
+  justify-content: center;
+  /* font-size: 40px; */
+  align-content: center;
+  /* letter-spacing: 10px; */
+  color: yellow;
+  /* height: 10%; */
+  margin: 30px;
+  font-weight: bold;
+  height: 200px;
+
+}
+
+.start {
+  color: yellow; 
+}
+
+/* h1 {
+  margin: 0;
+} */
+
+.grid {
+  justify-content: center;
+  height: 650px;
+  width: 650px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin-top: 200px; */
+  margin-bottom: 50px;
+  border-bottom: 3px solid #01fe01;
+}
+
+.grid div {
+  flex-grow: 1;
+  height: 5.67%;
+  width: 5.66%;
+  margin: 2px;
+  /* opacity: 0.6; */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid rgb(249, 241, 13);
+  /* box-shadow: 0 0 20px 0 rgba(252, 251, 251, 0.68); */
+}
+
+/* span {
+  /* justify-content: center;
+  letter-spacing: 6px; */
+  /* margin-top: 50px 20px;
+  } */
+  
+  .options {
+    text-align: center;
+    margin-top: 155px;
+  }
+
+  button#yes.text2 {
+  margin-top: 20px;
+  }
+  span#storyQuestion.text1 {                             
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    /* padding: 20px 0; */
+    /* padding-top: 200px; */
+    color: yellow;
+    animation-name: hinge 2s 1;
+    }
+  
+    .text2 {
+    font-size: 20px;
+    font-family: 'Permanent Marker', cursive;
+    color: yellow;
+    text-align: center;
+    /* padding: 10px;
+    margin: 20px; */
+    }
+
+button {
+  /* justify-content: center;  */
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 0;
+  width: 60px;
+  height: 55px;
+  /* margin: 10px; */
+  background: black;
+  opacity: 80%;
+  box-shadow: -4px -10px 10px yellow;
+  /* box-shadow: 5px 5px 20px #02f1d2; */
+}
+
+button:hover {
+font-size:40px;
+width: 100px;
+height: 100px;
+transition: all 0.5s ease;
+}
+
+.crawl {
+font: 18px;
+color: yellow;
+margin: 15px;
+/* opacity: 1; */
+ /* Positioned the element so we can adjust the top property in the animation */
+position: relative;
+ /* Makes sure the text is fully off the screen at the start and end of the animation */
+top: -100px;
+ /* Defines the skew origin at the very center when I apply transforms on the animation */
+transform-origin: 50% 100%;
+animation: crawl 60s linear 1; 
+} 
+
+.story { 
+/* Flexbox to center the entire element on the screen  */
+display: flex;
+justify-content: center;
+/* opacity: 0; */
+/* This is a magic number based on the context in which this snippet is used and effects the perspective */
+height: 800px;
+letter-spacing: 6px;
+/* margin: 0 auto; */
+padding: 10px 50px;
+/* This sets allows us to transform the text on a 3D plane, and is somewhat a magic number */
+perspective: 400px;
+/* The rest is totally up to personal styling preferences */
+font-size: 50px;
+line-height: 150%;
+text-align: justify;
+overflow: hidden;
+}   
+
+.fade {
+position: relative;
+width: 100%;
+min-height: 15vh;
+top: -10px;
+background-image: linear-gradient(0deg, transparent);
+z-index: 1;
+transition: ease-out 3s;
+} 
+
+.activeAlien {
+  background-image: url(/Users/soniachoudhury/development/personal2/Images/thanosArmy.gif);
+}
+
+.spaceship {
+  background-image: url('/Users/soniachoudhury/development/personal2/Images/thor_3.png');
+  background-size: 117%;
+  -webkit-animation-name: spaceboots;
+  -webkit-animation-duration: 2s;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+.bullet {
+  background-image: url('/Users/soniachoudhury/development/personal2/Images/lightning giphy.gif');
+}
+
+.bomb {
+  background-image: url('/Users/soniachoudhury/development/personal2/Images/alien orb 2 giphy.gif');
+}
+
+.score, .lives {
+  margin-top: 70px;
+  display: inline-block;
+  width: 150px;
+  font-size: 20px;
+  color: yellow;
+}
+
+
+.lives {
+  float: right;
+  text-align: right;
+}
+
+.endMessage {
+  color: rgb(255, 111, 0);
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing: 15px;
+  font-weight: bold;
+}
+
+.start {
+  color: yellow;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+ 
+  letter-spacing: 10px;
+  font-weight: bold;
+  /* border: solid yellow; */
+
+  text-align: center;
+  display: inline-block;
+  /* margin: 20px 0;
+  padding: 5px;
+  width: 200px;
+  height: 150px; */
+
+}
+
+.start:hover {
+  cursor: pointer;
+  letter-spacing: 15px;
+}
+
+.explosion {
+  background-image: url('/Users/soniachoudhury/development/personal2/Images/explosion-sprite-sheet.png');
+}
+
+.hidden {
+  display: none!important;
+}
+
+.countdown {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+  letter-spacing: 10px;
+  font-weight: bold;
+}
+
+@keyframes hinge {
+  0% {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  20%,
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 80deg);
+    transform: rotate3d(0, 0, 1, 80deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  40%,
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, 60deg);
+    transform: rotate3d(0, 0, 1, 60deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 700px, 0);
+    transform: translate3d(0, 700px, 0);
+    opacity: 0;
+  }
+}
+
+
+
+@-webkit-keyframes spaceboots {
+   0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+   10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+   20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+   30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+   40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+   50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+   60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+   70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+   80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+   90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+   100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes crawl {
+  0% { 
+    /* The element starts below the screen */
+    top: 0px;
+    /* Rotated the text 20 degrees but kept it close to the viewer */
+    transform: rotateX(20deg) translateZ(0);
+  }
+  100% { 
+    /* This is a magic number, but using a big one to make sure the text is fully off the screen at the end */
+    top: -6000px;
+    /* Slightly increasing the rotation at the end and moving the text far away from the viewer */
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}

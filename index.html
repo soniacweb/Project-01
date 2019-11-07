@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SEI Project 1: Space Invaders</title>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,500,700,800" rel="stylesheet">
+    <script src="scripts/app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <audio class="strangerThings" src="Audio/Stranger Things.wav"></audio>
+  </head>
+  <body>
+
+    <header>
+        <img src='images/space-invaders-logo.png' alt='SPACE INVADERS' id='logo'/>
+       
+    </header>
+    <main>
+<div class="fullscreen-bg">
+        <video autoplay muted loop class="fullscreen-bg_video">
+            <source src="Images/4K Galaxy Space Star Travel Zoom in Animation UHD HD Background AA VFX.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      <div class="score hidden">Score: <span id="scoreId"></span></div>
+      <div class="lives hidden">Lives left: <span id="livesId"></span></div>
+      <div class="countdown"></div>
+      <div class="endMessage"></div>
+      <div class="grid hidden"></div>
+ 
+      <div class="options">  
+          <span class="text1" id="storyQuestion">Want to hear your story before playing?</span><br>
+           <button class="text2" id="Yes">Play</button>
+
+        
+        </div>
+
+      <div class="fade"></div>
+
+  <div class="hidden" id="story">
+
+    <div class="start"></div> 
+    <div class="reset"></div>   
+
+    <div id="crawl"> 
+  
+    <p>In a galaxy far, far away..</p>
+      
+    <p>You are Earth's last hope, Thor. You must defeat the Space Invaders trying to take over the galaxy. The aim of the game is to shoot the invading alien armada, before it reaches our beloved planet's surface using your hammer.</p>
+
+    <p>Make it rain lightning and you better be quick! The aliens don't come in peace and will periodically drop bombs towards you.</p>
+    
+    <p>Peace will be restored to the galaxy only after you have sucessfully destroyed all the aliens- no pressure. The aim is to achieve the highest score possible before either being destroyed by the aliens, or allowing them to reach the planet's surface.</p>
+
+    <p>Good luck!</p>
+  
+      </div>
+    </div>
+
+
+      
+    </main>
+  </body>
+</html>
