@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     playStoryId.classList.add('hidden')
     crawlId.classList.add('hidden')
     optionsId.classList.add('hidden')
-    strangerThings()
+  
   }
 
   // CREATE GRID ===============================================================
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
       collision(bombIndex, 'floor', 'bomb', alienBombMovementId)
       console.log('hello')
       if (!gameInPlay) clearInterval(alienBombMovementId)
-    }, 400)
+    }, 600)
   }
 
   // Lose life function ========================================================
@@ -205,10 +205,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // header.classList.remove('hidden')
     // livesLeft = 0
     livesId.innerText = livesLeft
-    // reset.addEventListener('click', () => gameInit()) //trying to reset the game
-
-
-
     logoId.classList.remove('hidden')
   }
 

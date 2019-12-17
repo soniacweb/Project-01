@@ -66,15 +66,15 @@ header {
 
 .grid {
   justify-content: center;
-  height: 650px;
-  width: 650px;
+  height: 620px;
+  width: 620px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   /* margin-top: 200px; */
-  margin-bottom: 50px;
-  border-bottom: 3px solid #01fe01;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #01fe01;
 }
 
 .grid div {
@@ -189,11 +189,11 @@ transition: ease-out 3s;
 } 
 
 .activeAlien {
-  background-image: url(/Users/soniachoudhury/development/personal2/Images/thanosArmy.gif);
+  background-image: url('../Images/thanosArmy.gif');
 }
 
 .spaceship {
-  background-image: url('/Users/soniachoudhury/development/personal2/Images/thor_3.png');
+  background-image: url('../Images/thor_3.png');
   background-size: 117%;
   -webkit-animation-name: spaceboots;
   -webkit-animation-duration: 2s;
@@ -203,11 +203,11 @@ transition: ease-out 3s;
 }
 
 .bullet {
-  background-image: url('/Users/soniachoudhury/development/personal2/Images/lightning giphy.gif');
+  background-image: url('../Images/Lightening-giphy.gif');
 }
 
 .bomb {
-  background-image: url('/Users/soniachoudhury/development/personal2/Images/alien orb 2 giphy.gif');
+  background-image: url('../Images/alien-orb-2-giphy.gif');
 }
 
 .score, .lives {
@@ -258,7 +258,7 @@ transition: ease-out 3s;
 }
 
 .explosion {
-  background-image: url('/Users/soniachoudhury/development/personal2/Images/explosion-sprite-sheet.png');
+  background-image: url('../Images/explosion-sprite-sheet.png');
 }
 
 .hidden {
