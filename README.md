@@ -1,3 +1,8 @@
+
+![ga_cog_large_red_rgb](https://cloud.githubusercontent.com/assets/40461/8183776/469f976e-1432-11e5-8199-6ac91363302b.png)
+
+<img src='https://i.imgur.com/PY5QBmk.png' alt='logo'> 
+
 <h1>PROJECT-01 SPACE INVADERS</h1>
 
 Space Invaders is an entertaining browser-based arcade style game. 
