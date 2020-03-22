@@ -24,7 +24,7 @@ It was an independent project built in a week, and is both the first real game I
 
 <h2>Overview</h2>
 
-<p>Link to <a href="https://soniacweb.github.io/Project-01/">Space Invaders</a> is here<p>
+<p>Link to <a href="https://soniacweb.github.io/SEI-Project-01-Space-Invaders/">Space Invaders</a> is here<p>
 
 Here's screen grab of the landing page:
 
