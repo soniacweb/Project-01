@@ -128,8 +128,8 @@ button {
   text-align: center;
   display: inline-block;
   margin-top: 20px;
-  padding: 0;
-  width: 60px;
+  /* padding: 10px; */
+  width: 65px;
   height: 55px;
   /* margin: 10px; */
   background: black;
@@ -139,9 +139,10 @@ button {
 }
 
 button:hover {
-font-size:40px;
-width: 100px;
-height: 100px;
+font-size:23px;
+/* padding: 10px; */
+width: 70px;
+height: 65px;
 transition: all 0.5s ease;
 }
 
