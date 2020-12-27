@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     scoreId.innerText = 0
     livesId.innerText = 3
     endMessage.classList.add('hidden')
-    crawl.classList.add('hidden')
+    // crawl.classList.add('hidden')
     logoId.classList.add('hidden')
     storyId.classList.add('hidden')
     divFade.classList.add('hidden')
