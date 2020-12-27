@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     alienMovement = [1,1,1,1,width,-1,-1,-1,-1,width],
     squares = []
   let scoreTally = 0,
-    livesLeft = 3,
+    livesLeft = 5,
     alienArray = alienStart.slice(), // to create new array to use on reset - splice modifies existing array
     currentAlienMove = 0,
     spaceshipIndex = 217,
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     alienBombId = setInterval(alienBomb, 600)
     spaceshipIndex = 217
     squares[spaceshipIndex].classList.add('spaceship')
-    livesLeft = 3 // needs to be updated so this listens to livesleft at top of code
+    livesLeft = 5 // needs to be updated so this listens to livesleft at top of code
     scoreTally = 0
     scoreId.innerText = 0
     livesId.innerText = 3
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
       collision(bombIndex, 'floor', 'bomb', alienBombMovementId)
       console.log('hello')
       if (!gameInPlay) clearInterval(alienBombMovementId)
-    }, 600)
+    }, 300)
   }
 
   // Lose life function ========================================================
